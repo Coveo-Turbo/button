@@ -13,6 +13,13 @@
     <!-- <script src="components/<name>.js"></script> -->
 
     <script src="init.js"></script>
+    <script src="locales/en.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            Coveo.LocalizationManager(LOCALES)
+        })
+    </script>
+    
 
     <link rel="stylesheet" href="https://static.cloud.coveo.com/searchui/v2.9659/css/CoveoFullSearchNewDesign.css" />
     <link rel="stylesheet" href="component.css" />
@@ -104,6 +111,11 @@
               <span class="CoveoFieldValue" data-field="@source" data-text-caption="Source" style="margin-right:30px;"></span>
               <span class="CoveoFieldValue" data-field="@language" data-text-caption="Language" style="margin-right:30px;"></span>
               <span class="CoveoFieldValue" data-field="@filetype" data-text-caption="File Type" style="margin-right:30px;"></span>
+            </div>
+          </div>
+          <div class="coveo-result-row" style="margin-top:10px;">
+            <div class="coveo-result-cell">
+              <a class="CoveoButton" data-should-be-localized="true" data-text-caption="button" data-link="@clickUri"></a>
             </div>
           </div>
           <div class="coveo-result-row" style="margin-top:10px;">
