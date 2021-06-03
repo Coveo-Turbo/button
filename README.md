@@ -46,6 +46,18 @@ Place the component in your markup:
 <div class="CoveoButton"></div>
 ```
 
+## Options
+
+The following options can be configured:
+
+|       Option        | Required |  Type   |          Default           |                             Notes                                                                                   |
+| ------------------- | -------- | ------- | -------------------------- | ------------------------------------------------------------------------------------------------------------------- |
+| `target`            | No       | string  | `_target`                 | Specifies how to interact with the link. Valid values are one of the following: `_blank`, `_self`, `_parent`, `_top`, `framename`. |
+| `textCaption`       | No       | string  | `button`                   | Specifies the value of the button.                                                                                  |
+| `shouldBeLocalized` | No       | boolean | `false`                    | Specifies whether to translate the button value.                                                                    |
+| `link`              | No       | field   | `@syssource`               | Specifies the field to use to create the link.                                                                      |
+
+
 ## Extending
 
 Extending the component can be done as follows:

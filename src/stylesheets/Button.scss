@@ -1,3 +1,21 @@
 .CoveoButton {
-    // Styles here
+    position: relative;
+    margin: 0;
+    padding: 5px 5px;
+    height: 20px;
+    outline: none;
+    text-decoration: none;
+    cursor: pointer;
+    background-color: #ffffff;
+    border: 1px solid rgba(22, 76, 167, 0.6);
+    border-radius: 10px;
+    color: #1d89ff;
+    font-family: inherit;
+    z-index: 0;
+    overflow: hidden;
+    transition: all 0.3s cubic-bezier(0.02, 0.01, 0.47, 1);
+
+    &:hover {
+        animation: rotate 0.7s ease-in-out both;
+    }
 }
